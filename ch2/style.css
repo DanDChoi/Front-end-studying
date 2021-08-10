@@ -1,0 +1,41 @@
+/* 선택자(selector) */
+
+/*div#header-center에서 div태그는 div생략가능, but 다른 태그(header)는 앞에 태그를 달아줘야 함 */
+#header-center { 
+    margin: 0 auto; 
+    width: 1080px;
+} 
+
+#header-search > h1 {
+    width: 222px;
+    height: 54px;
+    display: inline-block;
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2021/sp_main_57f073.png);
+    background-position: 0px -160px;
+    background-size: 445px 442px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+.blind {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    width: 1px;
+    height: 1px;
+}
+
+/* #header-search h2{
+    display: none;
+}*/
+
+/*
+#header-center h1 {
+자손선택자
+}*/
+
+#header-search fieldset {
+    width: 520px;
+    display: inline-block;
+}

@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#fixed {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+
+/* 선택자(selector) */
+
+/*div#header-center에서 div태그는 div생략가능, but 다른 태그(header)는 앞에 태그를 달아줘야 함 */
+.center-align { 
+    margin: 0 auto; 
+    width: 1080px;
+} 
+
+#header-search a {
+    text-decoration: none;
+}
+
+#header-search h1 {
+    width: 222px;
+    height: 54px;
+    display: inline-block;
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2021/sp_main_57f073.png);
+    background-position: 0px -160px;
+    background-size: 445px 442px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    position: relative;
+    top: -4px;
+    right: -6px;
+}
+#header-search h1 span {
+    display: none;
+}
+
+.blind {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    width: 1px;
+    height: 1px;
+}
+
+/* #header-search h2{
+    display: none;
+}*/
+
+/*
+#header-center h1 {
+자손선택자
+}*/
+
+#header-search fieldset {
+    margin-left: 20px;
+    /*padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 10px;
+    padding-right: 0px; */
+    padding: 12px 0 12px 10px;
+    width: 521px;
+    height: 49px;
+    display: inline-block;
+    border: 2px solid #03cf3d; /* hex */
+    vertical-align: middle;
+    position: relative;
+}
+
+#header-search fieldset input {
+    border: none;
+    padding: 0;
+    outline: none;
+    vertical-align: top;
+    width: 405px;
+    height: 23px;
+}
+
+#header-search fieldset button {
+    width: 49px;
+    height: 49px;
+    border: none;
+    padding: 0;
+    background: #03cf3d;
+    position: absolute;
+    right: -2px;
+    top: -2px;
+}
+
+#search-image {
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2021/sp_main_57f073.png);
+    background-position: 23px -633px;
+    width: 21px;
+    height: 21px;
+    display: inline-block;
+    background-size: 430px 430px;
+    margin: -4px;
+}
+
+/* Position 관련 (css속성으로 위치를 어떻게 바꾸는가에 대한 규칙) s
+block format context
+stacking context (쌓임 맥락)
+block format context
+*/
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+}
