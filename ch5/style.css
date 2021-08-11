@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* 선택자(selector) */
+
+/*div#header-center에서 div태그는 div생략가능, but 다른 태그(header)는 앞에 태그를 달아줘야 함 */
+.center-align { 
+    margin: 0 auto; 
+    width: 1080px;
+} 
+
+header {
+    height: 170px;
+}
+
+#header-top {
+    float: right;
+}
+
+#header-top span {
+    color: #888;
+    letter-spacing: -1px;
+    font-size: 11px;
+    line-height: 22px;
+}
+
+#header-search {
+    clear: both;
+    padding-top: 20px;
+}
+
+#header-search a {
+    text-decoration: none;
+}
+
+#header-search h1 {
+    width: 222px;
+    height: 54px;
+    display: inline-block;
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2021/sp_main_57f073.png);
+    background-position: 0px -160px;
+    background-size: 445px 442px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    position: relative;
+    top: -4px;
+    right: -6px;
+}
+#header-search h1 span {
+    display: none;
+}
+
+.blind {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    width: 1px;
+    height: 1px;
+}
+
+/* #header-search h2{
+    display: none;
+}*/
+
+/*
+#header-center h1 {
+자손선택자
+}*/
+
+#header-search fieldset {
+    margin-left: 18ㄷpx;
+    /*padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 10px;
+    padding-right: 0px; */
+    padding: 12px 0 12px 10px;
+    width: 521px;
+    height: 49px;
+    display: inline-block;
+    border: 2px solid #03cf3d; /* hex */
+    vertical-align: middle;
+    position: relative;
+}
+
+#header-search fieldset input {
+    border: none;
+    padding: 0;
+    outline: none;
+    vertical-align: top;
+    width: 405px;
+    height: 23px;
+}
+
+#header-search fieldset button {
+    width: 49px;
+    height: 49px;
+    border: none;
+    padding: 0;
+    background: #03cf3d;
+    position: absolute;
+    right: -2px;
+    top: -2px;
+}
+
+#search-image {
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2021/sp_main_57f073.png);
+    background-position: 23px -633px;
+    width: 21px;
+    height: 21px;
+    display: inline-block;
+    background-size: 430px 430px;
+    margin: -4px;
+}
+
+/* Position 관련 (css속성으로 위치를 어떻게 바꾸는가에 대한 규칙) s
+block format context
+stacking context (쌓임 맥락)
+block format context
+*/
+
+nav {
+    height: 46px;
+    border-top: 1px solid #f1f3f6;
+}
+
+nav ul {
+    display: inline-block;
+    margin: 0;
+    padding: 16px 0 0 4px;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li span:first-child {
+    height: 16px;
+    display: inline-block;
+    background-image: url(https://s.pstatic.net/static/www/img/uit/2019/sp_nav.png);
+    background-repeat: no-repeat;
+    margin-left: 14px;
+}
+
+nav li:first-child span:first-child {
+    width: 25px;
+    background-position: 0 -285px;
+    margin-left: 0;
+}
+
+nav li:nth-child(2) span:first-child {
+    width: 27px;
+    background-position: -279px -52px;
+}
+
+nav li:nth-child(3) span:first-child {
+    width: 40px;
+    background-position: -100px -182px;
+}
+
+nav li:nth-child(4) span:first-child {
+    width: 40px;
+    background-position: -101px -156px;
+}
+
+nav li:nth-child(5) span:first-child {
+    width: 26px;
+    background-position: -279px -156px;
+}
+
+nav li:nth-child(6) span:first-child {
+    width: 25px;
+    background-position: -70px -285px;
+}
+
+nav li:nth-child(7) span:first-child {
+    width: 35px;
+    background-position: -125px -130px;
+}
+
+nav li:nth-child(8) span:first-child {
+    width: 26px;
+    background-position: -279px -208px;
+}
+
+nav li:nth-child(9) span:first-child {
+    width: 26px;
+    background-position: -128px -104px;
+}
+
+nav li:nth-child(10) span:first-child {
+    width: 26px;
+    background-position: -36px -259px;
+}
+
+nav li:nth-child(11) span:first-child {
+    width: 39px;
+    background-position: -151px -156px;
+}
+
+nav li:nth-child(12) span:first-child {
+    width: 26px;
+    background-position: -279px -130px;
+}
+
+nav li:nth-child(13) span:first-child {
+    width: 26px;
+    background-position: -234px -233px;
+}
+
+nav li:nth-child(14) span:first-child {
+    width: 26px;
+    background-position: -72px -259px;
+}
+
+nav li:nth-child(15) span:first-child {
+    width: 13px;
+    background-position: -140px -78px;
+}
+
+nav li:nth-child(16) span:first-child {
+    width: 26px;
+    background-position: -279px 0;
+}
+
+.nav-divider {
+    display: inline-block;
+    margin: 18px 16px 0;
+    width: 1px;
+    height: 14px;
+    background: #ebeef3;
+}
+
+#search-ranking {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#rank-number {
+    margin-top: -9px;
+    color: #00ab33;
+    font-size: 16px;
+}
