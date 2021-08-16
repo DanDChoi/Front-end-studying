@@ -339,6 +339,77 @@ nav ul {
     right: 0;
 }
 
+#rank-popup {
+    padding: 1px 1px;
+}
+
+#rank-increasing-ages {
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.rank-increasing {
+    font-weight: bold;
+}
+
+.rank-ages {
+    font-size: 13px;
+    float: right;
+    color: gray;
+}
+
+#rank-top {
+    padding: 10px 0;
+    font-size: 0;
+}
+
+#rank-top .rank-top10 {
+    position: relative;
+    top: 50%;
+    transform: translateY(-30%);
+    font-size: 13px;
+    text-align: center;
+    width: 49%;
+    height: 23px;
+    display: inline-block;
+    border: 1px solid #d6d7d8;
+}
+
+#rank-top .rank-top20 {
+    position: relative;
+    top: 50%;
+    transform: translateY(-30%);
+    font-size: 13px;
+    text-align: center;
+    width: 49%;
+    height: 23px;
+    display: inline-block;
+    border: 1px solid #d6d7d8;
+    background: #eee;
+}
+
+#rank-contents {
+    font-size: 15px;
+    line-height: 140%;
+}
+
+#rank-footer {
+    font-size: 13px;
+    color: gray;
+}
+
+#rank-footer .rank-time {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+}
+
+#rank-footer .rank-tracking {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+}
+
 #search-ranking:hover ul{
     display: inline-block;
 }
