@@ -298,7 +298,6 @@ nav ul {
     background-position: -279px 0;
 }
 
-
 .nav-divider {
     display: inline-block;
     margin: 18px 16px 0;
@@ -350,6 +349,7 @@ nav ul {
 
 .rank-increasing {
     font-weight: bold;
+    font-size: 15px;
 }
 
 .rank-ages {
@@ -359,41 +359,53 @@ nav ul {
 }
 
 #rank-top {
-    padding: 10px 0;
+    padding: 10px 0 3px 0;
     font-size: 0;
 }
 
-#rank-top .rank-top10 {
+#rank-top .rank-top10, #rank-top .rank-top20 {
     position: relative;
     top: 50%;
-    transform: translateY(-30%);
+    transform: translateY(-10%);
     font-size: 13px;
     text-align: center;
-    width: 49%;
+    width: 50%;
     height: 23px;
     display: inline-block;
     border: 1px solid #d6d7d8;
+    padding: 3px;
 }
 
 #rank-top .rank-top20 {
-    position: relative;
-    top: 50%;
-    transform: translateY(-30%);
-    font-size: 13px;
-    text-align: center;
-    width: 49%;
-    height: 23px;
-    display: inline-block;
-    border: 1px solid #d6d7d8;
-    background: #eee;
+        background: #eee;
+        border-left: 0px;
 }
 
 #rank-contents {
-    font-size: 15px;
-    line-height: 140%;
+    font-size: 13px;
+    line-height: 170%;
+    padding-bottom: 3px;
+}
+
+#rank-contents li:first-child span:nth-child(3),
+#rank-contents li:nth-child(2) span:nth-child(3),
+#rank-contents li:nth-child(3) span:nth-child(3),
+#rank-contents li:nth-child(4) span:nth-child(3),
+#rank-contents li:nth-child(5) span:nth-child(3),
+#rank-contents li:nth-child(6) span:nth-child(3),
+#rank-contents li:nth-child(7) span:nth-child(3),
+#rank-contents li:nth-child(8) span:nth-child(3),
+#rank-contents li:nth-child(9) span:nth-child(3),
+#rank-contents li:nth-child(10) span:nth-child(3) {
+    background-image: url(./sp_themecast.png);
+    background-position: 44px -235px;
+    width: 23px;    
+    height:10px;
+    float: right;
 }
 
 #rank-footer {
+    border-bottom: 1px solid rgb(201, 201, 201);
     font-size: 13px;
     color: gray;
 }
@@ -401,13 +413,13 @@ nav ul {
 #rank-footer .rank-time {
     position: absolute;
     bottom: 5px;
-    left: 10px;
+    left: 18px;
 }
 
 #rank-footer .rank-tracking {
     position: absolute;
     bottom: 5px;
-    right: 10px;
+    right: 18px;
 }
 
 #search-ranking:hover ul{
