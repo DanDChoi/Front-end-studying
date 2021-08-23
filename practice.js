@@ -153,3 +153,52 @@ title.innerText = "Got you"
 const title = document.querySelector(".hello h1")
 
 console.log(title);
+
+
+
+
+
+
+
+
+const h1 = document.querySelector(".hello h1");
+
+function handleTitleClick(){
+    h1.style.color = "blue";
+};
+
+function handleMouseEnter(){
+    h1.innerText = "Mouse is here!";
+};
+
+function handleMouseLeave(){
+    h1.innerText = "Mouse is gone!";  
+};
+
+function handleWindowResize(){
+    document.body.style.backgroundColor = "tomato";
+}
+
+function handleWindowCopy(){
+    alert("Copier!");
+}
+
+function handleWindowOffline(){
+    alert("SOS no WIFI")
+}
+
+function HandleWindowOnline(){
+    alert("all good")
+}
+
+
+h1.addEventListener("click", handleTitleClick);  // Same as-> title.onclick = handleTitleClick;
+h1.addEventListener("mouseenter", handleMouseEnter); // Same as-> title.onmouseenter = handleMouseEnter;
+h1.addEventListener("mouseleave", handleMouseLeave); // Same as-> title.onmouseleave = handleMouseLeave;
+
+//EventLisener is better because you can use '.removeEventListener' to adjust codes.
+
+window.addEventListener("resize", handleWindowResize);
+window.addEventListener("copy", handleWindowCopy);
+window.addEventListener("offline", handleWindowOffline);
+window.addEventListener("online", HandleWindowOnline);

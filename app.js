@@ -1,8 +1,14 @@
-const title = document.querySelector(".hello h1");
+const h1 = document.querySelector(".hello h1");
 
 function handleTitleClick(){
-    title.style.color = "blue";
+    const currentColor = h1.style.color;
+    let newColor;
+    if(currentColor === "blue"){
+       newColor = "tomato";
+    } else {
+        newColor = "blue";
+    }
+    h1.style.color = newColor;
 }
 
-title.addEventListener("click", handleTitleClick);
-
+h1.addEventListener("click", handleTitleClick);  // Same as-> title.onclick = handleTitleClick;
