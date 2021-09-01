@@ -25,22 +25,33 @@ html {
     height: 20px;
 }
 
+button {
+    background: none;
+    border: 0;
+    margin-left: 8px;
+}
+
 input {
     appearance: none;
     background: none;
     border: none;
     color: white;
-    font-size: 20px;
+    width: 210px;
+    text-align: center;
+    font-size: 18px;
     border-bottom: 3px solid rgba(255, 255, 255, 0.8);
     margin-bottom: 20px;
   }
   
 
 
+
+
 #clock {
     font-size: 7em;
     color: cornsilk;
     text-shadow: 0 0 3px cornsilk;
+    margin-bottom: 30px;
 }
 
 #greeting {
@@ -48,6 +59,29 @@ input {
     color: cornsilk;
 }
 
+#todo-list {
+    list-style: none;
+    font-size: 1em;
+    color: cornsilk;
+}
+
+#quote {
+    position: fixed;
+    top: 500px;
+    text-align: center;
+    color: cornsilk;
+}
+
+.quote-writing {
+    margin-bottom: 15px;
+}
+
+#weather {
+    color: cornsilk;
+    position: fixed;
+    left: 1250px;
+    text-align: right;
+}
 
 .bgImage {
     position: fixed;
